@@ -17,5 +17,6 @@ def flippingBits(n):
             fixedNum = fixedNum + item
     finalNum = int(fixedNum, 2)
     print(finalNum)
+    print("hello world")
     return finalNum
 flippingBits(n)
