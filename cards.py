@@ -7,7 +7,7 @@ class Card:
     drawn = []
     card = ""
     hand = []
-    handSize = 2
+    handSize = 5
 
     def dealCard(suits, numbers, drawn, hand):
         suit = suits[random.randint(0, len(suits) - 1)]
@@ -24,8 +24,11 @@ class Card:
         while len(hand) < handSize:
             dealCard(suits, numbers, drawn, hand)
 
-    dealHand(card, suits, numbers, drawn, hand, handSize, dealCard)
+    # dealHand(card, suits, numbers, drawn, hand, handSize, dealCard)
 
-    print('hand', hand)
+    # print('hand', hand)
+    
+# hand = Card.dealHand()
+# print(hand)
 
     # print('drawn', drawn)
